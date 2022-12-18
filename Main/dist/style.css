@@ -11,10 +11,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.row {
+    display: flex;
+    justify-content:space-around;
+    
+}
+
 #navbar {
     background-color: var(--primary);
     color: var(--secondary);
     font-size: 50px;
+    background-color: coral;
 }
 
 .navbar-brand {
