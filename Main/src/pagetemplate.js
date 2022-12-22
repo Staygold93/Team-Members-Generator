@@ -8,14 +8,14 @@ const Employee = require("../lib/employee")
 
  const generateInt = (intern) => {
     return `<div class="container mb-3 card-custom shadow-lg border-primary rounded"style="max-width: 540px;">
-    <div class="row">
+    <div class=" title row">
         <div class="team-area col-8 d-flex ">
             <h2 class="intern">Intern</h2>
         </div>
     </div>    
             <div class="employee">
                 <p>Name: ${intern.name}</p>
-                <p>Email:${intern.email}</p>
+                <p>Email:<a href="">${intern.email}</a></p>
                 <p>Id:${intern.id}</p>
                 <p>School:${intern.school}</p>
             </div>
@@ -25,16 +25,17 @@ const Employee = require("../lib/employee")
 //add engineer card html
 const generateEng = (engineer) => {
     return `<div class="container mb-3 card-custom shadow-lg border-primary rounded"style="max-width: 540px;">
-    <div class="row">
+    <div class=" title row">
         <div class="team-area col-8 d-flex ">
             <h2 class="engineer">Engineer</h2>
         </div>
     </div>    
             <div class="employee">
                 <p>Name:${engineer.name}</p>
-                <p>Email:${engineer.email}</p>
+                <p>Email:<a href="">${engineer.email}</a></p>
                 <p>Id:${engineer.id}</p>
-                <p>Github Username${engineer.githubUsername}:</p>
+                <p>Github Username: <a href="https://github.com/${engineer.github}" target="_blank"
+                rel="noopener noreferrer">${engineer.github}</a>
             </div>
 </div>`
 }
@@ -42,14 +43,14 @@ const generateEng = (engineer) => {
 
 const generateMgr =(manager) => {
     return `<div class="container mb-2 card-custom shadow-lg border-primary rounded" style="max-width: 540px;">
-    <div class="row">
+    <div class="title row">
         <div class="team-area col-8 d-flex ">
             <h2 class="manager">Manager</h2>
         </div>
     </div>    
             <div class="employee">
                 <p>Name:${manager.name}</p>
-                <p>Email:${manager.email}</p>
+                <p>Email:<a href="">${manager.email}</a></p>
                 <p>Id:${manager.id}</p>
                 <p>officeNumber:${manager.officeNumber}</p>
                
@@ -95,17 +96,25 @@ html.push(team
     </head>
     <body>
     
-    
-    
-    
-    <nav>
-        <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">Team Generator</h1>
-            </div>
-            <div>${generateTeam(team)} </div>
+    <header class=" header container-fluid">
+    <div class="row">
+        <div class= " header col-12 mb-3  jumbotron">
+            <h1 class="team-profile-title text-center">Team Generator</h1>
         </div>
-    </nav>
+    </div>
+</header>
+    
+    
+   <main>
+   <div class="container">
+   <div class="row">
+       <div class="team-mem-container col-12 d-flex flex-wrap justify-content-around">
+            ${generateTeam(team)} 
+       </div>
+   </div>
+</div> 
+</main>
+  
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

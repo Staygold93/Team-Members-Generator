@@ -7,6 +7,11 @@
     --secondary: white;
 }
 
+.header {
+    margin-bottom: 13px;
+    background-color: rgb(234, 120, 120);
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,8 +19,15 @@ body {
 .row {
     display: flex;
     justify-content:space-around;
+    font-style: oblique;
+   
     
 }
+
+.title {
+    background-color: rgb(216, 187, 244);
+}
+
 
 #navbar {
     background-color: var(--primary);
