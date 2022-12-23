@@ -11,13 +11,13 @@ This project is a team profile generator using Nodejs, OOP and TDD (Jest). The u
 
 # Technologies Used
 
--HTML
--CSS
--JavaScript
--Nodejs
--Inquirerjs
--OOP
--TDD (jest tests)
+* HTML
+* CSS
+* JavaScript
+* Nodejs
+* Inquirerjs
+* OOP
+* TDD (jest tests)
 
 
 # Usage 
