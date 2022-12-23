@@ -9,7 +9,7 @@
 
 .header {
     margin-bottom: 13px;
-    background-color: rgb(234, 120, 120);
+    background-color:#4169E1;
 }
 
 body {
@@ -25,30 +25,12 @@ body {
 }
 
 .title {
-    background-color: rgb(216, 187, 244);
+    background-color: rgb(249, 230, 216);
 }
 
 
-#navbar {
-    background-color: var(--primary);
-    color: var(--secondary);
-    font-size: 50px;
-    background-color: coral;
-}
-
-.navbar-brand {
-    font-size: 50px;
-}
 
 
-.card-header {
-    background-color: var(--primary);
-    color: var(--secondary);
-}
 
-.card-body {
-    background-color: var(--secondary);
-    color: var(--primary);
-}
 
 
