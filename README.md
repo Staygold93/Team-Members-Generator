@@ -21,3 +21,7 @@ This project is a team profile generator using Nodejs, OOP and TDD (Jest). The u
 
 
 # Usage 
+![image](https://user-images.githubusercontent.com/112224915/209270509-a9fcdae8-65b6-4b9c-892d-508c9e9869aa.png)
+
+# Video Link 
+https://drive.google.com/file/d/1YEv0cxjud4c8rNTWjSOyD14SX-7pWir1/view
